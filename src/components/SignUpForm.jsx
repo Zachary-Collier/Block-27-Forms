@@ -61,7 +61,7 @@ export default function SignUpForm({ setToken }) {
       {username && (
         <p>
           {username.length < 5
-            ? `Username must be more than 5 characters long. You have 
+            ? `Username must be exactly 5 characters long. You have 
               ${5 - username.length} 
             characters remaining`
             : username.length > 5
