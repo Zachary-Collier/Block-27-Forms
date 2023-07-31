@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  background-color: rgb(142, 201, 185)
 }
 
 .form h2 {
@@ -44,5 +45,5 @@ form input:focus {
 .form h3 {
   font-size: 1.8em;
   color: black;
-  margin-top: 4em;
+  margin-top: 2em;
 }
