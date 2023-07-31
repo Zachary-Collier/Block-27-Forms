@@ -32,7 +32,7 @@ export default function SignUpForm({ setToken }) {
       }
     } else {
       setGoodToGoSignUp(
-        "Your username has to be at least 5 characters long to submit."
+        "Your username has to be exactly 5 characters long to submit."
       );
     }
   }
