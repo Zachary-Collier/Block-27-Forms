@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../AuthenticationPrettyStyles.css"
+import "../AuthenticationPrettyStyles.css";
 
 export default function Authenticate({ token }) {
   const [successMessage, setSuccessMessage] = useState(null);
@@ -8,7 +8,7 @@ export default function Authenticate({ token }) {
 
   async function handleClick() {
     try {
-      if (error) setError(null);  
+      if (error) setError(null);
       const response = await fetch(
         "https://fsa-jwt-practice.herokuapp.com/authenticate",
         {
@@ -31,9 +31,15 @@ export default function Authenticate({ token }) {
   return (
     <div className="good section">
       <h2>Your Completed Authentication {user}!</h2>
-      {error && (<p>{error} You need to submit the signup form prior to authenticating.</p>)}
+      {error && (
+        <p>
+          {error} You need to submit the signup form prior to authenticating.
+        </p>
+      )}
       {successMessage && <p>{successMessage}</p>}
-      <button className="button" onClick={handleClick}>Authenticate Token!</button>
+      <button className="button" onClick={handleClick}>
+        Authenticate Token!
+      </button>
       {user && <h3>You are good to go {user}!!</h3>}
     </div>
   );
