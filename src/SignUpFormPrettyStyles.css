@@ -23,7 +23,7 @@ form label {
 }
 
 form input {
-  color: red;
+  color: red;  /* added this color */
   font-size: 0.8em;
   padding: 0.2em 0.6em 0.2em 0.8em;
   border: none;
