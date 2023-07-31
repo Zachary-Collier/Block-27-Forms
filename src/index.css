@@ -44,7 +44,7 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: red;
-  cursor: grabbing;
+  cursor: crosshair;
   transition: border-color 0.25s;
 }
 button:hover {
